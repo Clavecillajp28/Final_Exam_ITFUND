@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ShoeBoxx | Shoes &amp; Apparel</title>
+  <meta name="description" content="ShoeBoxx - your one-stop shop for sneakers, shoes and apparel.">
+  <!-- Source of Bootstrap: https://getbootstrap.com (v5.3.3 via jsDelivr CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="style.css" rel="stylesheet">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Shoe<span>Boxx</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="products.html">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <li class="nav-item ms-lg-3"><a class="btn btn-accent btn-sm px-3" href="products.html">Shop Now</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7 text-center text-lg-start">
+          <p class="text-uppercase fw-semibold mb-2" style="letter-spacing:3px;">Shoes &amp; Apparel</p>
+          <h1>Step into <span class="highlight">style</span>.<br>Walk with confidence.</h1>
+          <p class="lead my-4">Fresh sneakers, everyday shoes, and apparel that fit your lifestyle &mdash; at prices that fit your budget.</p>
+          <a href="products.html" class="btn btn-accent btn-lg me-2">Shop Collection</a>
+          <a href="about.html" class="btn btn-outline-light btn-lg">Our Story</a>
+        </div>
+        <div class="col-lg-5 text-center mt-5 mt-lg-0">
+          <div class="hero-emoji">&#x1F45F;</div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- FEATURES -->
+  <section class="py-5">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Why Shop at ShoeBoxx?</h2>
+      <div class="row g-4 text-center">
+        <div class="col-6 col-md-3">
+          <div class="feature-icon mb-3">&#x1F69A;</div>
+          <h6 class="fw-bold">Fast Delivery</h6>
+          <p class="small text-muted mb-0">Nationwide shipping to your doorstep.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="feature-icon mb-3">&#x2705;</div>
+          <h6 class="fw-bold">100% Authentic</h6>
+          <p class="small text-muted mb-0">Quality products you can trust.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="feature-icon mb-3">&#x1F504;</div>
+          <h6 class="fw-bold">Easy Exchange</h6>
+          <p class="small text-muted mb-0">Wrong size? Swap within 7 days.</p>
+        </div>
+        <div class="col-6 col-md-3">
+          <div class="feature-icon mb-3">&#x1F4B8;</div>
+          <h6 class="fw-bold">Affordable Prices</h6>
+          <p class="small text-muted mb-0">Style that won't break the bank.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="py-5" style="background: var(--sb-light);">
+    <div class="container">
+      <h2 class="section-title text-center mb-5">Featured Picks</h2>
+      <div class="row g-4">
+        <div class="col-6 col-lg-3">
+          <article class="card product h-100">
+            <img class="product-img" src="Images/Puma Mint Green Velocity Nitro 5.jpg" alt="Mint green Puma Velocity Nitro 5 running shoe" loading="lazy">
+            <div class="card-body"><span class="badge badge-sale mb-2">New</span><h3 class="h6 card-title fw-bold"><a class="stretched-link product-title-link" href="order.html?product=puma">Puma Velocity Nitro 5</a></h3><p class="small text-muted">Light, cushioned road runner in a fresh mint colorway.</p><div class="price">₱5,490</div></div>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="card product h-100">
+            <img class="product-img" src="Images/Nike Air Monarch SE.jpg" alt="Nike Air Monarch SE trainer" loading="lazy">
+            <div class="card-body"><span class="badge badge-sale mb-2">Best Seller</span><h3 class="h6 card-title fw-bold"><a class="stretched-link product-title-link" href="order.html?product=nike">Nike Air Monarch SE</a></h3><p class="small text-muted">Supportive trainer for gym sessions and everyday wear.</p><div class="price">₱3,890</div></div>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="card product h-100">
+            <img class="product-img" src="Images/New Balance 373.jpg" alt="New Balance 373 casual sneaker" loading="lazy">
+            <div class="card-body"><h3 class="h6 card-title fw-bold"><a class="stretched-link product-title-link" href="order.html?product=new-balance">New Balance 373</a></h3><p class="small text-muted">A classic low-profile sneaker for easy everyday style.</p><div class="price">₱3,590</div></div>
+          </article>
+        </div>
+        <div class="col-6 col-lg-3">
+          <article class="card product h-100">
+            <img class="product-img" src="Images/Adidas Yeezy Boost 350 V2 Onyx.jpg" alt="Adidas Yeezy Boost 350 V2 Onyx sneaker" loading="lazy">
+            <div class="card-body"><span class="badge badge-sale mb-2">Featured</span><h3 class="h6 card-title fw-bold"><a class="stretched-link product-title-link" href="order.html?product=yeezy">Yeezy Boost 350 V2 Onyx</a></h3><p class="small text-muted">All-black knit sneaker with a sleek profile and cushioned step.</p><div class="price">₱12,990</div></div>
+          </article>
+        </div>
+      </div>
+      <div class="text-center mt-5 no-print">
+        <a href="products.html" class="btn btn-outline-accent btn-lg">View All Products</a>
+      </div>
+    </div>
+  </section>
+  <!-- CTA -->
+  <section class="cta-band py-5 text-center">
+    <div class="container">
+      <h3 class="fw-bold mb-2">Get 10% off your first order</h3>
+      <p class="mb-3">Message us and mention code <strong>BOXX10</strong>.</p>
+      <a href="contact.html" class="btn btn-dark btn-lg no-print">Contact Us</a>
+      <p class="print-only mb-0">Visit us online or message us to order.</p>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="site-footer py-4">
+    <div class="container">
+      <div class="row gy-3 align-items-center">
+        <div class="col-md-6 text-center text-md-start">
+          <strong class="text-white">ShoeBoxx</strong> &mdash; Shoes &amp; Apparel<br>
+          <small>&copy; 2026 ShoeBoxx. All rights reserved.</small>
+        </div>
+        <div class="col-md-6 text-center text-md-end no-print">
+          <a href="index.html" class="me-3">Home</a>
+          <a href="products.html" class="me-3">Shop</a>
+          <a href="about.html" class="me-3">About</a>
+          <a href="contact.html">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
+
+

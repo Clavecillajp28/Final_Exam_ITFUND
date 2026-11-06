@@ -1,0 +1,89 @@
+/* ShoeBoxx custom styles (on top of Bootstrap 5.3) */
+:root {
+  --sb-dark: #111827;
+  --sb-accent: #ff5a1f;
+  --sb-accent-dark: #d94610;
+  --sb-light: #f8f5f0;
+}
+
+body { font-family: "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif; color: var(--sb-dark); }
+
+.navbar-brand { font-weight: 800; letter-spacing: .5px; font-size: 1.5rem; }
+.navbar-brand span { color: var(--sb-accent); }
+.navbar { background: var(--sb-dark); }
+.navbar .nav-link { color: #e5e7eb; font-weight: 500; }
+.navbar .nav-link:hover, .navbar .nav-link.active { color: var(--sb-accent); }
+.shop-navbar .navbar-brand { color: var(--sb-dark); }
+.shop-navbar .nav-link { color: var(--sb-dark); }
+.shop-navbar .nav-link:hover, .shop-navbar .nav-link.active { color: var(--sb-accent); }
+
+.btn-accent { background: var(--sb-accent); border-color: var(--sb-accent); color: #fff; font-weight: 600; }
+.btn-accent:hover { background: var(--sb-accent-dark); border-color: var(--sb-accent-dark); color: #fff; }
+.btn-outline-accent { border: 2px solid var(--sb-accent); color: var(--sb-accent); font-weight: 600; }
+.btn-outline-accent:hover { background: var(--sb-accent); color: #fff; }
+
+.hero {
+  background: linear-gradient(120deg, rgba(17,24,39,.92), rgba(17,24,39,.65)), linear-gradient(135deg, #ff5a1f, #111827);
+  color: #fff;
+  padding: 6rem 0;
+}
+.hero h1 { font-weight: 800; font-size: clamp(2.2rem, 5vw, 3.8rem); }
+.hero .highlight { color: var(--sb-accent); }
+.hero-emoji { font-size: clamp(7rem, 18vw, 12rem); line-height: 1; filter: drop-shadow(0 12px 20px rgba(0,0,0,.4)); }
+
+.section-title { font-weight: 800; }
+.section-title::after { content: ""; display: block; width: 60px; height: 4px; background: var(--sb-accent); margin: .6rem auto 0; border-radius: 2px; }
+.text-start .section-title::after, .section-title.text-start::after { margin-left: 0; }
+
+.product-img {
+  height: 200px;
+  width: 100%;
+  display: block;
+  object-fit: contain;
+  background: var(--sb-light);
+  border-radius: .5rem .5rem 0 0;
+}
+.card.product { border: 0; box-shadow: 0 4px 16px rgba(0,0,0,.08); transition: transform .2s; }
+.card.product:hover { transform: translateY(-6px); }
+.product-title-link { color: inherit; text-decoration: none; }
+.product-title-link:hover { color: var(--sb-accent); }
+.product-card-link { display: block; height: 100%; color: inherit; text-decoration: none; }
+.product-card-link .product-img { height: 260px; }
+.product-card-link:hover .card-title { color: var(--sb-accent); }
+.product-card-link .card.product { border: 1px solid rgba(0,0,0,.125); }
+.price { color: var(--sb-accent); font-weight: 700; font-size: 1.15rem; }
+.badge-sale { background: var(--sb-accent); }
+
+.feature-icon {
+  width: 64px; height: 64px; border-radius: 50%;
+  background: var(--sb-light); color: var(--sb-accent);
+  display: inline-flex; align-items: center; justify-content: center;
+  font-size: 1.8rem;
+}
+
+.cta-band { background: var(--sb-accent); color: #fff; }
+.page-header { background: var(--sb-dark); color: #fff; padding: 3.5rem 0; }
+.page-header h1 { font-weight: 800; }
+
+footer.site-footer { background: var(--sb-dark); color: #cbd5e1; }
+footer.site-footer a { color: #cbd5e1; text-decoration: none; }
+footer.site-footer a:hover { color: var(--sb-accent); }
+
+.print-only { display: none; }
+
+/* ---- Print: short bond paper (Letter 8.5in x 11in) ---- */
+@page { size: 8.5in 11in; margin: .5in; }
+@media print {
+  * { -webkit-print-color-adjust: exact; print-color-adjust: exact; }
+  .no-print, .navbar, .hero .btn { display: none !important; }
+  .print-only { display: block !important; }
+  body { font-size: 11pt; }
+  .hero { padding: 1.2rem 0 !important; }
+  .hero h1 { font-size: 26pt; }
+  .hero-emoji { font-size: 70pt; }
+  section { padding-top: 1rem !important; padding-bottom: 1rem !important; page-break-inside: avoid; }
+  .product-img { height: 90px; font-size: 2.5rem; }
+  .card.product { box-shadow: none; border: 1px solid #ddd; }
+  .cta-band { padding: 1rem 0 !important; }
+  a { text-decoration: none; color: inherit; }
+}

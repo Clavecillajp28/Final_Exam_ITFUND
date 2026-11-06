@@ -1,0 +1,12 @@
+The six product photos used in products.html are stored in this folder.
+
+The original four files were supplied with the project.
+
+Added photos:
+- Blue Gray Running Shoe.jpg — photo by Mostafa Mahmoudi, Unsplash
+  https://unsplash.com/photos/a-pair-of-running-shoes-on-a-white-background-W_uDEmTq0po
+- White Blue Sneaker.jpg — photo by Thibaut Burckel, Unsplash
+  https://unsplash.com/photos/a-white-and-blue-sneaker-on-a-white-surface-h6vJiyzyZoY
+
+Product names, descriptions, size ranges, and PHP prices shown on the Shop page
+are sample catalog copy and should be confirmed before taking real orders.
